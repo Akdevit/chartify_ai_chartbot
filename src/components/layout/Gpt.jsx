@@ -115,7 +115,7 @@ const Gpt = ({ showsidebarclick, hidesidebar }) => {
                         </div>
                     ) : (
                         messages.map((message, index) => (
-                            <div key={index} className={`w-full h-auto flex gap-2 ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}>
+                            <div key={index} className={`w-full h-auto flex gap-2 ${message.type === 'user' ? 'justify-end' : 'justify-start xl:flex-row lg:flex-row md:flex-row  flex-col'}`}>
                                 {message.type === 'bot' && (
                                     <div className='w-[40px] h-[40px] bg-[#2F2F2F] rounded-full flex justify-center items-center overflow-hidden'>
                                         <img className='w-[40px] h-[40px] object-cover' src={Icon} alt='icon.svg' />
