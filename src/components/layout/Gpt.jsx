@@ -177,7 +177,7 @@ const Gpt = ({ showsidebarclick, hidesidebar }) => {
                                 )}
                                 <div
                                     className={`h-auto p-2 ${message.type === 'user'
-                                        ? 'w-[60%] bg-[#1E1E1E] rounded-xl'
+                                        ? ' xl:w-[60%] lg:w-[60%] md:w-[60%] sm:w-[60%] w-[80%]  bg-[#1E1E1E] rounded-xl'
                                         : 'w-full bg-[#2F2F2F] rounded-xl'
                                         }`}
                                 >
