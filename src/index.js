@@ -4,7 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ClerkProvider } from "@clerk/clerk-react";
-
+import { Provider } from "react-redux";
+import store from "./store";
 // Import your publishable key
 const PUBLISHABLE_KEY = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
@@ -16,7 +17,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </ClerkProvider>
   </React.StrictMode>
 );
