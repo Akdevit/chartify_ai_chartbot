@@ -8,13 +8,6 @@ import PrivateRoute from "./Privaterout";
 function App() {
   return (
     <>
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LogIn />} />
-          <Route path="/home" element={<Home />} />
-        </Routes>
-      </BrowserRouter> */}
-
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LogIn />} />
